@@ -20,6 +20,13 @@ jobs:
           - "pypy-3.7"
           - "pypy-3.8"
           - "pypy-3.9"
+        exclude:
+          - os: macos-latest
+            python-version: "3.7"
+          - os: macos-latest
+            python-version: "pypy-3.7"
+          - os: macos-latest
+            python-version: "3.8"
 
     name: Test
     runs-on: ${{ matrix.os }}
