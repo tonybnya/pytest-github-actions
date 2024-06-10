@@ -1,0 +1,3 @@
+[tool.ruff]
+lint.select = ["ALL"]
+lint.ignore = ["ANN101", "FA102"]
